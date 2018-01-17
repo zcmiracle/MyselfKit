@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MyselfKit_Example' do
+  pod 'MyselfKit', :path => '../'
+
+  target 'MyselfKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
