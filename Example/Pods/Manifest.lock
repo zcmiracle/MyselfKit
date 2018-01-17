@@ -1,0 +1,16 @@
+PODS:
+  - MyselfKit (0.1.0)
+
+DEPENDENCIES:
+  - MyselfKit (from `../`)
+
+EXTERNAL SOURCES:
+  MyselfKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MyselfKit: e6f5847de38a36eb1e20bb85ecc0a60393606b90
+
+PODFILE CHECKSUM: eb93a6ca4534f15bc06215c9bc07e5bef79e163a
+
+COCOAPODS: 1.3.1

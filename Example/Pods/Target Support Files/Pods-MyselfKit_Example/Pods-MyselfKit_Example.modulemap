@@ -1,0 +1,6 @@
+framework module Pods_MyselfKit_Example {
+  umbrella header "Pods-MyselfKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
