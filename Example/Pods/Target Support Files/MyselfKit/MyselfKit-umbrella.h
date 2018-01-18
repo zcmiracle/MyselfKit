@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CTMediator+A.h"
 
 FOUNDATION_EXPORT double MyselfKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char MyselfKitVersionString[];
