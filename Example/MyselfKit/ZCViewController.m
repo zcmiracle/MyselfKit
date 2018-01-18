@@ -7,7 +7,6 @@
 //
 
 #import "ZCViewController.h"
-#import "CTMediator+A.h"
 
 @interface ZCViewController ()
 
@@ -20,9 +19,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor redColor];
-    
-    UIViewController *viewController = [[CTMediator sharedInstance] A_aViewController];
-    [self.navigationController pushViewController:viewController animated:YES];
+
 }
 
 - (void)clickButton

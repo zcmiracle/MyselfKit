@@ -1,6 +1,6 @@
 PODS:
   - CTMediator (13)
-  - MyselfKit (0.3.0):
+  - MyselfKit (0.4.2):
     - CTMediator
 
 DEPENDENCIES:
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CTMediator: 4cbf8ede42efc6b31715be88b78bdc9d94efa840
-  MyselfKit: 7209f7f84626eba6938830ecd75c07c26e76fe28
+  MyselfKit: 02289b73f7182aa89cf3dffca079b9969ec36c6f
 
 PODFILE CHECKSUM: 754dbdbbd4794c5fbd55f1d3cd5e79b55ff4a4b6
 
