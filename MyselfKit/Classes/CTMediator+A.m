@@ -7,7 +7,6 @@
 //
 
 #import "CTMediator+A.h"
-#import "ZCViewController.h"
 
 @implementation CTMediator (A)
 
