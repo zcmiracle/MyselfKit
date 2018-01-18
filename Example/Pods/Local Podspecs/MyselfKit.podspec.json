@@ -1,6 +1,6 @@
 {
   "name": "MyselfKit",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "summary": "A short description of MyselfKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zcmiracle/MyselfKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zcmiracle/MyselfKit.git",
-    "tag": "0.4.2"
+    "tag": "0.4.3"
   },
   "platforms": {
     "ios": "8.0"
