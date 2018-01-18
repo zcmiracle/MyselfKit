@@ -1,6 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## CTMediator
+
+MIT
+
+
 ## MyselfKit
 
 Copyright (c) 2018 489368600@qq.com <489368600@qq.com>

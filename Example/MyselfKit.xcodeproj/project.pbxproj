@@ -23,6 +23,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		95A2FC4A71B0E8422F7E017A /* Pods_MyselfKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5283F19FEB5000E30F05F91F /* Pods_MyselfKit_Example.framework */; };
+		B37C2B2B20103AC600D31189 /* CTMediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C2B2A20103AC600D31189 /* CTMediator+A.m */; };
 		B5A5393A209D45DA06E6989D /* Pods_MyselfKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581B26F33273A453C055FFB1 /* Pods_MyselfKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F2030D54A91F315C96E150F /* Pods-MyselfKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyselfKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyselfKit_Tests/Pods-MyselfKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC5113C3A835200ED1DBD696 /* MyselfKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyselfKit.podspec; path = ../MyselfKit.podspec; sourceTree = "<group>"; };
+		B37C2B2920103AC600D31189 /* CTMediator+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+A.h"; sourceTree = "<group>"; };
+		B37C2B2A20103AC600D31189 /* CTMediator+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+A.m"; sourceTree = "<group>"; };
 		F7CA140306C43640C5BEF8D0 /* Pods-MyselfKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyselfKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyselfKit_Example/Pods-MyselfKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,11 +146,14 @@
 		6003F593195388D20070C39A /* Example for MyselfKit */ = {
 			isa = PBXGroup;
 			children = (
+				B39F3C64200EF41F0069F13F /* Classes */,
 				6003F59C195388D20070C39A /* ZCAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZCViewController.h */,
 				6003F5A6195388D20070C39A /* ZCViewController.m */,
+				B37C2B2920103AC600D31189 /* CTMediator+A.h */,
+				B37C2B2A20103AC600D31189 /* CTMediator+A.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -194,6 +200,13 @@
 				4A427F5693F56504BBAA01F4 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B39F3C64200EF41F0069F13F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,9 +385,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyselfKit_Tests/Pods-MyselfKit_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,10 +404,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyselfKit_Example/Pods-MyselfKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/MyselfKit/MyselfKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MyselfKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +427,7 @@
 				6003F59E195388D20070C39A /* ZCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B37C2B2B20103AC600D31189 /* CTMediator+A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

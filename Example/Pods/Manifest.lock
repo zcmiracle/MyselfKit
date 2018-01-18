@@ -1,7 +1,10 @@
 PODS:
-  - MyselfKit (0.1.0)
+  - CTMediator (13)
+  - MyselfKit (0.2.0):
+    - CTMediator
 
 DEPENDENCIES:
+  - CTMediator
   - MyselfKit (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +12,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MyselfKit: e6f5847de38a36eb1e20bb85ecc0a60393606b90
+  CTMediator: 4cbf8ede42efc6b31715be88b78bdc9d94efa840
+  MyselfKit: c18e582b7b4e07c40529362ad217ab11cf4027a0
 
-PODFILE CHECKSUM: eb93a6ca4534f15bc06215c9bc07e5bef79e163a
+PODFILE CHECKSUM: 754dbdbbd4794c5fbd55f1d3cd5e79b55ff4a4b6
 
 COCOAPODS: 1.3.1

@@ -7,6 +7,7 @@
 //
 
 #import "ZCViewController.h"
+#import "CTMediator+A.h"
 
 @interface ZCViewController ()
 
@@ -17,13 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
+    UIViewController *viewController = [[CTMediator sharedInstance] A_aViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)clickButton
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

@@ -6,6 +6,6 @@ target 'MyselfKit_Example' do
   target 'MyselfKit_Tests' do
     inherit! :search_paths
 
-    
+    pod 'CTMediator'
   end
 end
